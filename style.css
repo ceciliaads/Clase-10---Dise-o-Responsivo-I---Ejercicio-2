@@ -1,24 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap') ;
 
-header {
+* {
+    margin: 0;
+}
+
+.menu {
     background-color: lightcoral;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     height: 40px;
 }
-.links {
+
+.link-navegacion {
     font-family: 'Amatic SC', cursive;
     font-size: 20px;
     color: snow;
-}
-
-span {
-    margin: 20px;
-}
-
-a:link {
+    /* Hay alguna diferencia si pongo un 'margin: 20px ;' aca?*/
     text-decoration: none;
+
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    height: 40px;
+}
+
+.links li {
+    margin-right: 20px;
+}
+
+a :visited {
+    color: snow;
 }
 
 .icono {
@@ -27,6 +40,7 @@ a:link {
 }
 
 @media (max-width: 600px) {
+
    .links {
        display: none;
     }
@@ -36,7 +50,7 @@ a:link {
         justify-content: flex-start;
         font-size: 20px;
         color:darkgray;
-        margin: 15px;
+        padding: 10px;
     }
 
     
